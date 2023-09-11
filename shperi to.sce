@@ -1,0 +1,12 @@
+clc;
+clear;
+r=input("Enter the value of r=");
+theta=input("Enter the value of theta=");
+phi=input("Enter the value of phi=");
+x=r*sind(theta)*cosd(phi);
+y=r*sind(theta)*sind(phi);
+phi=phi;
+p=r*sind(theta);
+z=r*cosd(theta);
+disp("cartesian coordinate of:",(x,y,z));
+disp("cylindrical coordinates of:",(phi,p,z));

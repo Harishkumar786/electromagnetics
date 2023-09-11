@@ -1,0 +1,13 @@
+clc;
+clear;
+p=input("Enter the value of p=");
+phi=input("Enter the value of phi=");
+z=input("Enter the value of z=");
+x=p*cosd(phi);
+y=p*sind(phi);
+z=z;
+r=sqrt(p^2+z^2);
+theta=atand(p/z);
+phi=phi;
+disp("cartesian coordinate of:",(x,y,z));
+disp("spherical coordinate of:",(r,theta,phi));

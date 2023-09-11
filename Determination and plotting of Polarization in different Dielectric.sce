@@ -1,0 +1,18 @@
+clc;
+clear;
+e0=8.854*10^-12;
+er = input("Enter the value of er:");
+E = input("Enter the value of E:");
+chi = er -1;
+polarisation = chi*e0*E;
+disp("the susceptibility is ",[chi],("C^2 Nm^2"));
+disp ("the polarisation is ",[polarisation],("C/m^2"));
+figure();
+x=linspace(1,10,50);
+y=E*exp(0.1*x);
+figure();
+subplot(2,2,1);
+plot2d3(x,y);
+title("Polarisation of dielectric medium ");
+xlabel("Electric field E");
+ylabel("polarisation P");

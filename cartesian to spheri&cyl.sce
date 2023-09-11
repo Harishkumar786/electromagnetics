@@ -1,0 +1,12 @@
+clc;
+clear;
+x=input("Enter the value of x:");
+y=input("Enter the value of y:");
+z=input("Enter the value of z:");
+p=sqrt(x^2+y^2);
+phi=atand(y/x);
+z=z;
+r=sqrt(x^2+y^2+z^2);
+theta=(z/r);
+disp([(p,phi,z],"Cylindrical coordinate:");
+disp([r,theta,phi],"Spherical coordinate:");
